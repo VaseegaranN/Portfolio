@@ -3,15 +3,6 @@ import React from 'react';
 const Header = () => {
   return (
     <header id="home">
-      {/* Top Bar: Burger Menu Icon */}
-      <div className="header__top">
-        <button className="header__menu-btn" aria-label="Toggle Menu">
-          <span className="header__menu-bar"></span>
-          <span className="header__menu-bar"></span>
-          <span className="header__menu-bar"></span>
-        </button>
-      </div>
-
       <div className="container header__container">
         {/* Left Side: Content & Actions */}
         <div className="header__content">
@@ -42,7 +33,7 @@ const Header = () => {
         <div className="header__right">
           <div className="header__backdrop"></div>
           <div className="header__image-wrapper">
-            <img src={`${import.meta.env.BASE_URL}assets/img/about-me.png`} alt="Vaseegaran N" />
+            <img src={`${import.meta.env.BASE_URL}portfolio.jpeg`} alt="Vaseegaran N" />
           </div>
         </div>
 
@@ -53,5 +44,6 @@ const Header = () => {
 };
 
 export default Header;
+
 
 
