@@ -1,5 +1,4 @@
 import React from 'react';
-import TransparentImage from './TransparentImage';
 
 const Header = () => {
   return (
@@ -43,7 +42,7 @@ const Header = () => {
         <div className="header__right">
           <div className="header__backdrop"></div>
           <div className="header__image-wrapper">
-            <TransparentImage src={`${import.meta.env.BASE_URL}portfolio.jpeg`} alt="Vaseegaran N" />
+            <img src={`${import.meta.env.BASE_URL}assets/img/about-me.png`} alt="Vaseegaran N" />
           </div>
         </div>
 
@@ -54,4 +53,5 @@ const Header = () => {
 };
 
 export default Header;
+
 
