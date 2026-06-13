@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
 
+const base = import.meta.env.BASE_URL;
+
 const projectsData = [
   {
     id: 1,
     title: 'Plant Disease Detection',
-    image: '/assets/img/work-1.jpg',
+    image: `${base}assets/img/work-1.jpg`,
     description: 'Engineered an end-to-end computer-vision mobile application providing rapid agricultural crop diagnosis via edge neural networks.',
     tech: ['Android Studio', 'Firebase ML Kit', 'Python', 'Java'],
     category: 'off-duty',
-    demo: '/portfolio-details-1.html'
+    demo: `${base}portfolio-details-1.html`
   },
   {
     id: 2,
     title: 'Multi-Role Crowdfunding Platform',
-    image: '/assets/img/work-2.jpg',
+    image: `${base}assets/img/work-2.jpg`,
     description: 'Designed a secure, full-stack crowdfunding system supporting structured cross-role communications and transaction validations.',
     tech: ['PHP', 'MySQL', 'AJAX', 'HTML5/CSS3'],
     category: 'on-duty',
-    demo: '/portfolio-details-2.html'
+    demo: `${base}portfolio-details-2.html`
   }
 ];
 

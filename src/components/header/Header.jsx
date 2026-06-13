@@ -43,7 +43,7 @@ const Header = () => {
         <div className="header__right">
           <div className="header__backdrop"></div>
           <div className="header__image-wrapper">
-            <TransparentImage src="/portfolio.jpeg" alt="Vaseegaran N" />
+            <TransparentImage src={`${import.meta.env.BASE_URL}portfolio.jpeg`} alt="Vaseegaran N" />
           </div>
         </div>
 
