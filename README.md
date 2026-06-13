@@ -2,7 +2,7 @@
 
 A high-performance, responsive React.js and Vite developer portfolio. Designed with modern dark-mode aesthetics, custom CSS transitions, and advanced interactive animations.
 
-Live URL: **[https://vaseegaran.github.io/Portfolio/](https://vaseegaran.github.io/Portfolio/)**
+Live URL: **[https://vaseegarann.github.io/Portfolio/](https://vaseegarann.github.io/Portfolio/)**
 
 ---
 
