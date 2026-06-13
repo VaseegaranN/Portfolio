@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Plant Disease Detection | Project Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: 0;
+      border: 0;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #1f1f38;
+      color: #fff;
+      line-height: 1.7;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKcWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuZGFiYWNiYiwgMjAyMS8wNC8xNC0wMDozOTo0NCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjQgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0wMS0xN1QxODo0NzozMVoiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDEtMTlUMTA6NDE6MzBaIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0wMS0row56aQAA");
+      padding: 3rem 0;
+    }
+
+    .container {
+      width: 75%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    header {
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      color: #4db5ff;
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    .btn {
+      display: inline-block;
+      color: #4db5ff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      border: 1px solid #4db5ff;
+      transition: all 400ms ease;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #1f1f38;
+      border-color: transparent;
+    }
+
+    .details__grid {
+      display: grid;
+      grid-template-columns: 55% 40%;
+      gap: 5%;
+      align-items: start;
+    }
+
+    .details__image-card {
+      border-radius: 2rem;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      aspect-ratio: 16/10;
+    }
+
+    .details__image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .details__info-card {
+      background: #2c2c6c;
+      padding: 2.5rem;
+      border-radius: 2rem;
+      border: 1px solid transparent;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .details__info-card h3 {
+      color: #4db5ff;
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+      border-bottom: 2px solid rgba(77, 181, 255, 0.2);
+      padding-bottom: 0.8rem;
+    }
+
+    .details__info-card ul li {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .details__info-card ul li strong {
+      color: #fff;
+      display: inline-block;
+      width: 100px;
+    }
+
+    .tech-tag {
+      background: rgba(255, 255, 255, 0.1);
+      color: #4db5ff;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.5rem;
+      margin-right: 0.4rem;
+      display: inline-block;
+      margin-top: 0.4rem;
+    }
+
+    .details__description {
+      margin-top: 3rem;
+      background: #2c2c6c;
+      padding: 3rem;
+      border-radius: 2rem;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .details__description h3 {
+      color: #4db5ff;
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+    }
+
+    .details__description p {
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .details__description ul {
+      margin-top: 1rem;
+    }
+
+    .details__description ul li {
+      margin-bottom: 0.8rem;
+      display: flex;
+      gap: 1rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .details__description ul li i {
+      color: #4db5ff;
+      margin-top: 5px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 1024px) {
+      .container {
+        width: 86%;
+      }
+      .details__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Plant Disease Detection</h1>
+      <a href="/" class="btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </header>
+
+    <div class="details__grid">
+      <!-- Left: Image Showcase -->
+      <div class="details__image-card">
+        <img src="/assets/img/work-1.jpg" alt="Plant Disease Detection Application">
+      </div>
+
+      <!-- Right: Technical Breakdown Card -->
+      <div class="details__info-card">
+        <h3>Project Metadata</h3>
+        <ul>
+          <li><strong>Role</strong> Lead ML Engineer & Android Developer</li>
+          <li><strong>Domain</strong> Agricultural Technology (Agri-Tech)</li>
+          <li><strong>Research</strong> Published paper in IJSREM</li>
+          <li><strong>Inference</strong> Edge execution (under 150ms latency)</li>
+          <li>
+            <strong>Stack</strong>
+            <div>
+              <span class="tech-tag">Android Studio</span>
+              <span class="tech-tag">Firebase ML Kit</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Java</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom: Description -->
+    <div class="details__description">
+      <h3>What this Project Accomplishes</h3>
+      <p>
+        Agricultural productivity is often threatened by crop infections. This project engineered an end-to-end computer-vision mobile application providing rapid agricultural crop diagnosis via image-processing neural networks.
+      </p>
+      <p>
+        The app allows farmers to capture leaves in real-time. By deploying edge-compiled TensorFlow/Firebase ML models directly onto Android devices, we bypassed server dependency and network latencies.
+      </p>
+      
+      <h3>Key Features & Implementation</h3>
+      <ul>
+        <li>
+          <i class="fas fa-check-circle"></i>
+          <p><strong>Offline Inference Engine:</strong> Integrated Firebase ML Kit on-device model interpreters, delivering rapid crop diagnosis under 150ms directly on edge hardware.</p>
+        </li>
+        <li>
+          <i class="fas fa-check-circle"></i>
+          <p><strong>Mobile Vision Framework:</strong> Structured Android Studio Java codebase implementing camera stream capture, buffer conversions, and overlay displays.</p>
+        </li>
+        <li>
+          <i class="fas fa-check-circle"></i>
+          <p><strong>Neural Network training:</strong> Trained custom convolutional neural networks (CNNs) in Python on plant datasets to accurately identify leaf spot, blight, and rust conditions.</p>
+        </li>
+        <li>
+          <i class="fas fa-check-circle"></i>
+          <p><strong>Scholarly Impact:</strong> Co-authored and published structural research documentation detailing classification accuracies and inference statistics in the IJSREM journal.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
