@@ -66,31 +66,3 @@ Portfolio/
 └── vite.config.js        # Vite build optimization pipelines
 ```
 
----
-
-## 🚀 Getting Started
-
-To run the project locally on your machine:
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/VaseegaranN/Portfolio.git
-cd Portfolio
-```
-
-### 2. Install dependencies
-```bash
-npm install
-```
-
-### 3. Start development server
-```bash
-npm run dev
-```
-Open `http://localhost:5173/` in your browser.
-
-### 4. Build for production
-```bash
-npm run build
-```
-Production assets will compile into the `dist/` directory.
