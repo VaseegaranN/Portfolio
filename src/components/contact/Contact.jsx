@@ -30,7 +30,7 @@ const Contact = () => {
             <i className="fab fa-linkedin-in"></i>
             <h4>LinkedIn</h4>
             <h5>Vaseegaran N</h5>
-            <a href="https://linkedin.com/in/vaseegaran-n-53b573216" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+            <a href="https://www.linkedin.com/in/vaseegaran-nandakumar-53b573216/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
           </article>
 
           <article className="contact__option">

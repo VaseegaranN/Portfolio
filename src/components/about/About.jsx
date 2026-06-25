@@ -18,7 +18,7 @@ const About = () => {
             <article className="about__card">
               <i className="fas fa-briefcase"></i>
               <h5>Experience</h5>
-              <small>1.5+ Years Industry Experience</small>
+              <small>1.9 Years Industry Experience</small>
             </article>
 
             <article className="about__card">
@@ -35,7 +35,7 @@ const About = () => {
           </div>
 
           <p>
-            Performance-driven Software Engineer specializing in full-stack engineering, .NET ecosystems, and automated workflow environments. Experienced in architecting state-driven process engines, optimizing relational database architectures, and deploying machine learning solutions. Adept at translating complex operational workflows into highly scalable back-office automation pipelines, robust telemetry ingestion loops, and secure user management platforms.
+            Results-oriented .NET Full Stack Developer with 1.9 years of experience designing, developing, and maintaining scalable web applications and backend services using C#, ASP.NET Core, .NET Web API, SQL Server, and modern front-end technologies. Skilled in building secure RESTful APIs, optimizing database performance, and implementing business-critical workflow automation solutions. Experienced in translating complex business requirements into reliable, high-performance software systems. Strong collaborator with a passion for clean code, continuous improvement, and delivering measurable business value.
           </p>
 
           <a href="#contact" className="btn btn-primary">Let's Talk</a>

@@ -16,10 +16,10 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://linkedin.com/in/vaseegaran-n-53b573216" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/vaseegaran-nandakumar-53b573216/" target="_blank" rel="noreferrer">
           <i className="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://github.com/VASEEGARAN" target="_blank" rel="noreferrer">
+        <a href="https://github.com/VaseegaranN" target="_blank" rel="noreferrer">
           <i className="fab fa-github"></i>
         </a>
         <a href="mailto:vaseegaran.n@gmail.com">

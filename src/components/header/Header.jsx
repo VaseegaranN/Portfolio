@@ -8,7 +8,7 @@ const Header = () => {
         <div className="header__content">
           <h5>Hello,</h5>
           <h1>I'm Vaseegaran N</h1>
-          <h5 className="text-light typewriter">I Am Software Engineer</h5>
+          <h5 className="text-light typewriter">I Am .NET Full Stack Developer</h5>
           
           <div className="header__cta">
             <a href="#contact" className="btn btn-primary">
@@ -17,10 +17,10 @@ const Header = () => {
           </div>
 
           <div className="header__socials">
-            <a href="https://linkedin.com/in/vaseegaran-n-53b573216" target="_blank" rel="noreferrer" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/vaseegaran-nandakumar-53b573216/" target="_blank" rel="noreferrer" title="LinkedIn">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/VASEEGARAN" target="_blank" rel="noreferrer" title="GitHub">
+            <a href="https://github.com/VaseegaranN" target="_blank" rel="noreferrer" title="GitHub">
               <i className="fab fa-github"></i>
             </a>
             <a href="mailto:vaseegaran.n@gmail.com" title="Email">
@@ -33,11 +33,9 @@ const Header = () => {
         <div className="header__right">
           <div className="header__backdrop"></div>
           <div className="header__image-wrapper">
-            <img src={`${import.meta.env.BASE_URL}portfolio.jpeg`} alt="Vaseegaran N" />
+            <img src={`${import.meta.env.BASE_URL}portfolio_vasee.jpeg`} alt="Vaseegaran N" />
           </div>
         </div>
-
-        <a href="#contact" className="header__scroll-down">Scroll Down</a>
       </div>
     </header>
   );

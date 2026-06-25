@@ -15,24 +15,22 @@ const Experience = () => {
             <article className="timeline__card">
               <h4>Software Engineer</h4>
               <h5>Logicvalley Technologies</h5>
-              <small className="date">May 2025 - Present | Coimbatore, India</small>
+              <small className="date">Oct 2024 - June 2026 | Coimbatore, India</small>
               <ul>
-                <li>Designed and implemented the backend architecture for a Private Land Parking Enforcement automation framework.</li>
-                <li>Programmed robust data ingestion paths for high-frequency CCTV / ANPR stream captures.</li>
-                <li>Built resilient third-party lookup integrations utilizing the Illumin8 processing platform.</li>
-                <li>Developed full-featured back-office queue panels inside the core solution platform.</li>
+                <li>Developed and maintained enterprise-grade backend services using C# and .NET technologies to support high-volume transaction processing workflows.</li>
+                <li>Developed backend modules supporting end-to-end parking charge lifecycle management.</li>
+                <li>Built API-driven workflows for automated validation, case processing, and enforcement activities.</li>
+                <li>Implemented business rule engines for workflow orchestration and state transitions.</li>
+                <li>Optimized database operations to improve processing efficiency and system scalability.</li>
               </ul>
-            </article>
-
-            <article className="timeline__card">
-              <h4>Software Engineer Intern</h4>
-              <h5>Logicvalley Technologies</h5>
-              <small className="date">Oct 2024 - May 2025 | Coimbatore, India</small>
-              <ul>
-                <li>Extended core features of the enterprise .NET application platform, optimizing relational SQL schemas.</li>
-                <li>Coded state-machine triggers to manage multi-tiered financial escalation rules.</li>
-                <li>Authored automated image-deletion hooks and clean-slate transaction purges.</li>
-              </ul>
+              <div className="achievements" style={{ marginTop: '1.2rem' }}>
+                <h5 style={{ color: 'var(--color-primary)', marginBottom: '0.4rem', fontSize: '0.9rem', fontWeight: '600' }}>Key Achievements:</h5>
+                <ul style={{ listStyleType: 'circle', paddingLeft: '1.2rem', marginTop: '0.2rem' }}>
+                  <li style={{ marginBottom: '0.2rem' }}>Improved application performance through SQL optimization and backend enhancements.</li>
+                  <li style={{ marginBottom: '0.2rem' }}>Automated critical business workflows, reducing manual intervention and increasing processing efficiency.</li>
+                  <li style={{ marginBottom: '0.2rem' }}>Delivered scalable API-driven solutions supporting high-volume transactional operations.</li>
+                </ul>
+              </div>
             </article>
 
           </div>
@@ -44,19 +42,40 @@ const Experience = () => {
           <div className="experience__skills-container">
             
             <div className="experience__section">
-              <h3>Languages & Frameworks</h3>
+              <h3>Programming Languages</h3>
               <div className="skills__details-grid">
                 <article className="experience__details">
                   <i className="fas fa-check-circle"></i>
                   <div>
-                    <h4>C# & .NET Core</h4>
-                    <small className="text-light">Experienced</small>
+                    <h4>C#</h4>
+                    <small className="text-light">Intermediate</small>
                   </div>
                 </article>
                 <article className="experience__details">
                   <i className="fas fa-check-circle"></i>
                   <div>
-                    <h4>Java</h4>
+                    <h4>JavaScript</h4>
+                    <small className="text-light">Beginner</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>SQL</h4>
+                    <small className="text-light">Intermediate</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>HTML5</h4>
+                    <small className="text-light">Intermediate</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>CSS3</h4>
                     <small className="text-light">Intermediate</small>
                   </div>
                 </article>
@@ -67,6 +86,61 @@ const Experience = () => {
                     <small className="text-light">Intermediate</small>
                   </div>
                 </article>
+              </div>
+            </div>
+
+            <div className="experience__section">
+              <h3>Backend Development</h3>
+              <div className="skills__details-grid">
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>ASP.NET Core</h4>
+                    <small className="text-light">Experienced</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>.NET Web API</h4>
+                    <small className="text-light">Experienced</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>Entity Framework Core</h4>
+                    <small className="text-light">Experienced</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>RESTful API Development</h4>
+                    <small className="text-light">Experienced</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>Authentication & Authorization</h4>
+                    <small className="text-light">Experienced</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>Microservices Fundamentals</h4>
+                    <small className="text-light">Intermediate</small>
+                  </div>
+                </article>
+                <article className="experience__details">
+                  <i className="fas fa-check-circle"></i>
+                  <div>
+                    <h4>React</h4>
+                    <small className="text-light">Intermediate</small>
+                  </div>
+                </article>
                 <article className="experience__details">
                   <i className="fas fa-check-circle"></i>
                   <div>
@@ -74,105 +148,8 @@ const Experience = () => {
                     <small className="text-light">Intermediate</small>
                   </div>
                 </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>PHP</h4>
-                    <small className="text-light">Intermediate</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>HTML5/CSS3</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
               </div>
             </div>
-
-            <div className="experience__section">
-              <h3>Databases & Systems</h3>
-              <div className="skills__details-grid">
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>SQL Server</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>MySQL</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>State Machines</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>RDBMS</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-              </div>
-            </div>
-
-            <div className="experience__section">
-              <h3>Developer Tools</h3>
-              <div className="skills__details-grid">
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>Visual Studio</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>VS Code</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>Git & GitHub</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>Android Studio</h4>
-                    <small className="text-light">Experienced</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>Firebase</h4>
-                    <small className="text-light">Intermediate</small>
-                  </div>
-                </article>
-                <article className="experience__details">
-                  <i className="fas fa-check-circle"></i>
-                  <div>
-                    <h4>Blender</h4>
-                    <small className="text-light">Basic</small>
-                  </div>
-                </article>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
